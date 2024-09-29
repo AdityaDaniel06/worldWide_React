@@ -1,10 +1,14 @@
 import Pagenav from '../components/PageNav';
 import styles from './Login.module.css';
+import customBtn from '../components/Button.module.css';
+
+import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState('jack@example.com');
+  const [email, setEmail] = useState('email@example.com');
   const [password, setPassword] = useState('qwerty');
 
   return (
@@ -32,7 +36,15 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <Link to="/app">
+            <Button variant="success" size="lg">
+              Login
+            </Button>
+          </Link>
+          &nbsp; &nbsp;
+          <Button variant="secondary" size="lg">
+            Sign Up
+          </Button>
         </div>
       </form>
     </main>
