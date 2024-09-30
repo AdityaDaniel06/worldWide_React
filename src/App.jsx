@@ -10,10 +10,11 @@ import PageNotFound from './pages/PageNotFound';
 import Login from './pages/Login';
 import AppLayout from './pages/AppLayout';
 import CityList from './components/CityList';
+import CountryList from './components/CountryList';
 
 function App() {
   return (
-    <Container fluid>
+    <Container fluid xs={12} md={8}>
       <BrowserRouter>
         <Routes>
           {/* <Route path="/" element={<Homepage />}></Route> */}
@@ -24,7 +25,7 @@ function App() {
           <Route path="/app" element={<AppLayout />}>
             <Route index element={<CityList />}></Route>
             <Route path="cities" element={<CityList />}></Route>
-            <Route path="countries" element={<p>Countries</p>}></Route>
+            <Route path="countries" element={<CountryList />}></Route>
             <Route path="form" element={<p>form</p>}></Route>
           </Route>
           <Route path="*" element={<PageNotFound />}></Route>
