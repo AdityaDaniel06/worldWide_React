@@ -1,8 +1,7 @@
 # React + Vite
+This Project mainly focuses on routes in React.
+Project is built to track the travel destinations ,and see it on map.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/2ff75b1a-bbf3-4195-96dd-64436639e2ce)
+![image](https://github.com/user-attachments/assets/864fcc6d-1565-4b90-a4f6-d6ed7d45ec0e)
