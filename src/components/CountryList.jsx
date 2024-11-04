@@ -1,23 +1,23 @@
-import styles from './CountryList.module.css';
-function CountryList() {
-  return (
-    <div className={styles.city}>
-      <div className={styles.row}>
-        <h6>City name</h6>
-        <h3>
-          <span>🏖️</span> <span>Indonesia </span>
-        </h3>
-      </div>
+import styles from "./CountryList.module.css";
+import Spinner from "./Spinner";
+import Message from "./Message";
+import CountryItem from "./CountryItem";
+function CountryList({ cities, isLoading }) {
+  if (isLoading) return <Spinner />;
+  if (!cities.length) return <Message message="Add a country " />;
 
-      <div className={styles.row}>
-        <h6>You went to Java ,Bali on</h6>
-        <p>Aug 2024</p>
-      </div>
-      <div className={styles.row}>
-        <h6>Your notes</h6>
-        <p>Special trip..</p>
-      </div>
-    </div>
+  const countries = cities.reduce((arr, city) => {
+    if (!arr.map((el) => el.country).includes(city.country))
+      return [...arr, { country: city.country, emoji: city.emoji }];
+    else return arr;
+  }, []);
+
+  return (
+    <ul className={styles.countryList}>
+      {countries.map((country) => (
+        <CountryItem country={country} />
+      ))}
+    </ul>
   );
 }
 

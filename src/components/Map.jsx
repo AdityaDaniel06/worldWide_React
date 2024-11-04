@@ -1,6 +1,6 @@
-import styles from './Map.module.css';
-import map_bg from '../../public/10-8.webp';
-import { Container } from 'react-bootstrap';
+import styles from "./Map.module.css";
+import map_bg from "../../public/10-8.webp";
+import { Container } from "react-bootstrap";
 function Map() {
   return (
     <Container>

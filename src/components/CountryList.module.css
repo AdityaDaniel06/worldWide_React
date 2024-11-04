@@ -1,47 +1,12 @@
-.city {
-  padding: 2rem 3rem;
-  max-height: 70%;
-  background-color: var(--color-dark--2);
-  border-radius: 7px;
-  /* overflow: scroll; */
-
+.countryList {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  height: 65vh;
+  list-style: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
-.row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.city h6 {
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: 900;
-  color: var(--color-light--1);
-}
-
-.city h3 {
-  font-size: 1.9rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.city h3 span {
-  font-size: 3.2rem;
-  line-height: 1;
-}
-
-.city p {
-  font-size: 1.6rem;
-}
-
-.city a:link,
-.city a:visited {
-  font-size: 1.6rem;
-  color: var(--color-brand--1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 1.6rem;
 }

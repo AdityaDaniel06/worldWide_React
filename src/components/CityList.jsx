@@ -1,25 +1,18 @@
-import styles from './CityList.module.css';
-function CityList() {
-  return (
-    <>
-      <div className={styles.city}>
-        <div className={styles.row}>
-          <h6>City name</h6>
-          <h3>
-            <span>🌴</span> <span>Goa</span>
-          </h3>
-        </div>
+import styles from "./CityList.module.css";
 
-        <div className={styles.row}>
-          <h6>You went to Goa on</h6>
-          <p>Nov 2022</p>
-        </div>
-        <div className={styles.row}>
-          <h6>Your notes</h6>
-          <p>Trips with friends</p>
-        </div>
-      </div>
-    </>
+import Spinner from "./Spinner";
+import CityItem from "./CityItem";
+import Message from "./Message";
+function CityList({ cities, isLoading }) {
+  if (isLoading) return <Spinner />;
+  if (!cities.length)
+    return <Message message="Add your first city by clicking on the map" />;
+  return (
+    <ul className={styles.city}>
+      {cities.map((city) => (
+        <CityItem city={city} key={city.id} />
+      ))}
+    </ul>
   );
 }
 

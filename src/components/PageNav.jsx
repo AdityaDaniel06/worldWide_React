@@ -1,13 +1,13 @@
-import { Container } from 'react-bootstrap';
-import Stack from 'react-bootstrap/Stack';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container } from "react-bootstrap";
 
-import styles from './PageNav.module.css';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-import { NavLink } from 'react-router-dom';
+import styles from "./PageNav.module.css";
 
-import Logo from './Logo';
+import { NavLink } from "react-router-dom";
+
+import Logo from "./Logo";
 
 function Pagenav() {
   return (
@@ -23,6 +23,9 @@ function Pagenav() {
               </li>
               <li>
                 <NavLink to="/products">Products</NavLink>
+              </li>
+              <li>
+                <NavLink to="/blogs">Blogs</NavLink>
               </li>
               <li>
                 <NavLink to="/login" className={styles.ctaLink}>
