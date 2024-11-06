@@ -1,7 +1,6 @@
-import styles from "./AppNav.module.css";
-import Nav from "react-bootstrap/Nav";
-
 import { NavLink } from "react-router-dom";
+import styles from "./AppNav.module.css";
+
 function AppNav() {
   return (
     <nav className={styles.nav}>
@@ -16,4 +15,5 @@ function AppNav() {
     </nav>
   );
 }
+
 export default AppNav;
