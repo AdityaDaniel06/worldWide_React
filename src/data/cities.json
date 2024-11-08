@@ -1,14 +1,26 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
+      "cityName": "Goa",
+      "country": "India",
+      "emoji": "🏖️",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite trip so far!",
+      "position": {
+        "lat": 15.496777,
+        "lng": 73.827827
+      },
+      "id": 739301381
+    },
+    {
+      "cityName": "Spiti Valley",
+      "country": "India, Ladakh",
       "emoji": "✈️",
       "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "notes": "What a fun trip",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": 32.2461,
+        "lng": 78.0349
       },
       "id": 73930385
     },
@@ -25,14 +37,14 @@
       "id": 17806751
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "⚽",
+      "cityName": "Alleppey",
+      "country": "Kerala",
+      "emoji": "🚣",
       "date": "2027-02-12T09:24:11.863Z",
       "notes": "Amazing 😃",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": 9.4981,
+        "lng": 76.3388
       },
       "id": 98443197
     }
