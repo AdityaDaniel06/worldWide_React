@@ -1,10 +1,8 @@
-import { Container } from "react-bootstrap";
-
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import styles from "./PageNav.module.css";
-
 import { NavLink } from "react-router-dom";
 
 import Logo from "./Logo";
