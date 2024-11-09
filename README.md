@@ -1,9 +1,9 @@
 # React + Vite
 
 This Project mainly focuses on routes and Global State Management using Context Provider in React.
-Project is built to track the travel destinations ,and see it on map using Leaflet library.
+The project is built to track the travel destinations and see them on the map using the React Leaflet library.
 
 ![image](https://github.com/user-attachments/assets/2ff75b1a-bbf3-4195-96dd-64436639e2ce)
 
-![image](image.png)
-![image](image-1.png)
+![image](https://github.com/user-attachments/assets/768da3a1-e0eb-4c8f-9283-714ae33d756b)
+
