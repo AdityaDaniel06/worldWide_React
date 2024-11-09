@@ -1,8 +1,8 @@
+import styles from "./PageNav.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import styles from "./PageNav.module.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Logo from "./Logo";
 
@@ -15,18 +15,18 @@ function Pagenav() {
             <Logo />
             <ul>
               <li>
-                <NavLink to="/pricing">Pricing</NavLink>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
-                <NavLink to="/products">Products</NavLink>
+                <Link to="/products">Products</Link>
               </li>
               <li>
-                <NavLink to="/blogs">Blogs</NavLink>
+                <Link to="/blogs">Blogs</Link>
               </li>
               <li>
-                <NavLink to="/login" className={styles.ctaLink}>
+                <Link to="/login" className={styles.ctaLink}>
                   Login
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </nav>
