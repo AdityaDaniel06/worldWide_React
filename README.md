@@ -1,5 +1,6 @@
 # React + Vite
 
+Deployed:-------**https://world-wide-react.vercel.app/** --------------
 This Project mainly focuses on routes and Global State Management using Context Provider in React.
 The project is built to track the travel destinations and see them on the map using the React Leaflet library.
 
