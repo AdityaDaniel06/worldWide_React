@@ -16,9 +16,13 @@ function City() {
   const { id } = useParams();
   const { getCity, currentCity, isLoading } = useCities();
 
-  useEffect(() => {
-    getCity(id);
-  }, [id]);
+  useEffect(
+    () => {
+      getCity(id);
+    },
+    [id],
+    getCity
+  );
 
   const { cityName, emoji, date, notes } = currentCity;
 
